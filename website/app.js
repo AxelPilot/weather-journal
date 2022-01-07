@@ -103,7 +103,7 @@ const retrieveWeatherData = async (baseURL, zipCode, country, apiKey) => {
         // Retrieve weather data from the OpenWeatherMap API.
         retrieveWeatherData(
             baseURL, document.getElementById('zip').value,
-            document.getElementById('country').value, apiKey.API_KEY + '&units=metric')
+            document.getElementById('country').value, `${apiKey.API_KEY}&units=metric`)
             .then((data) => {
                 if (data.cod != 200) {
                     alert(
