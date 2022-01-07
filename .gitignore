@@ -1,0 +1,4 @@
+/node_modules
+/commentsOnlyJS
+temp.js
+.env
